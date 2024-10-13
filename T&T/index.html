@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours and Travel</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Tours and Travel</h1>
+        <img src="/Users/jessicapereira/T&T/pics/logo.png" alt="Company Logo" class="logo">
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="openSignup">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero">
-            <h2>Explore the World with Us</h2>
-            <p>Your adventure starts here!</p>
+            <img src="/Users/jessicapereira/T&T/pics/landing.png" alt="Travel Adventure">
+            <h2>Your Adventure Awaits</h2>
+            <p>Discover amazing destinations and experiences around the world.</p>
         </section>
 
+        <!-- Services Section -->
         <section id="services">
-            <h2>Our Services</h2>
             <div class="service">
+                <img src="/Users/jessicapereira/T&T/pics/8.png" alt="Customized Tours">
                 <h3>Customized Tours</h3>
                 <p>We offer personalized travel packages tailored to your needs.</p>
             </div>
             <div class="service">
+                <img src="/Users/jessicapereira/T&T/pics/29.png" alt="Group Travel">
                 <h3>Group Travel</h3>
                 <p>Join our group tours and meet fellow travelers.</p>
             </div>
             <div class="service">
+                <img src="/Users/jessicapereira/T&T/pics/2.png" alt="Travel Insurance">
                 <h3>Travel Insurance</h3>
                 <p>Protect yourself with our comprehensive travel insurance plans.</p>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contact-form">
@@ -56,9 +64,32 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Tours and Travel. All rights reserved.</p>
     </footer>
+
+    <!-- Signup Modal -->
+    <div class="signup-modal" id="signupModal">
+        <div class="signup-container">
+            <h2>Create an Account</h2>
+            <form action="signup.php" method="POST">
+                <div class="input-group">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" required>
+                </div>
+                <div class="input-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="userPassword">Password:</label>
+                    <input type="password" id="userPassword" name="userPassword" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
